@@ -8,9 +8,7 @@ RUN apt-get update && apt-get install -y mechanic \
         && apt-get autoremove -y \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY assets/etc/mechanic.conf /etc/mechanic.conf
-COPY assets/etc/mechanic/ /etc/mechanic/
-COPY assets/service /service
+COPY assets/ /
 
 VOLUME /srv/mechanic
 
