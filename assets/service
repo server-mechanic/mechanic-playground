@@ -1,0 +1,9 @@
+#!/bin/bash
+
+trap 'exit 0' SIGTERM
+trap 'exit 0' SIGINT
+
+while true; do
+  echo "service up"
+  sleep 1
+done
